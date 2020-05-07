@@ -1,7 +1,10 @@
 ---
 date: {{ published }}
-{%- if category %}
 category:
+- "social"
+- "Audio"
+{%- if category %}
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}

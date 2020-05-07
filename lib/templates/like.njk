@@ -1,9 +1,11 @@
 ---
-title: '{{ name }}'
+title: '👍 {{ name }}'
 date: {{ published }}
 like-of: {{ likeOf }}
+link: {{ likeOf }}
+category: "social"
 {%- if category %}
-category:
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}

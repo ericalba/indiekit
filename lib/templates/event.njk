@@ -7,8 +7,11 @@ excerpt: {{ summary }}
 start: {{ start }}
 end: {{ end }}
 location: {{ location }}
-{%- if category %}
 category:
+- "social"
+- "Event"
+{%- if category %}
+tag:
 {%- for item in category %}
 - {{ item }}
 {%- endfor %}

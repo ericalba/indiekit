@@ -7,13 +7,11 @@ tag:
 - {{ item }}
 {%- endfor %}
 {%- endif %}
-image:
-  path: {{ photo[0].value }}
-  thumbnail: https://images.weserv.nl/?url={{ photo[0].value }}&w=400
-  caption: {{ photo[0].alt }}
-photo:
+gallery:
 {%- for item in photo %}
-- url: {{ item.value }}
+- image_path: https://images.weserv.nl/?url={{ item.value }}&w=600
+  url: {{ item.value }}
+  title: {{ item.alt }}
   alt: {{ item.alt }}
 {%- endfor %}
 {%- if syndicateTo %}
