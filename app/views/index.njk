@@ -2,6 +2,7 @@
 
 {% block content %}
 <p>{{ __("This is the %s endpoint for", "<a href=\"https://www.w3.org/TR/micropub/\">Micropub</a>") | safe }} <a href="{{ app.url }}">{{ pub.url | replace('https://', '')}}</a>.</p>
+<p>More details on the <a href="https://github.com/bmann/indiekit">README of bmann/indiekit</a></p>
 <dl>
 {% if pub["media-endpoint"] %}
   <dt>{{ __("Media endpoint") }}</dt>
